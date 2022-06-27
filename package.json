@@ -1,0 +1,51 @@
+{
+    "name": "@ducksclan/fingerprint",
+    "version": "0.0.1",
+    "description": "passive fingerprinting for express",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
+        "start": "node ./dist/index.js",
+        "build": "webpack",
+        "test": "ts-mocha -p ./tsconfig.json src/**/*.test.ts"
+    },
+    "peerDependencies": {
+        "express": "*"
+    },
+    "dependencies": {
+        "geoip-lite": "^1.4.5",
+        "murmurhash3js": "^3.0.1"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.3.1",
+        "@types/express": "^4.17.13",
+        "@types/geoip-lite": "^1.4.1",
+        "@types/mocha": "^9.1.1",
+        "@types/murmurhash3js": "^3.0.2",
+        "@types/node": "^17.0.24",
+        "chai": "^4.3.6",
+        "mocha": "^10.0.0",
+        "node-mocks-http": "^1.11.0",
+        "ts-loader": "^9.2.8",
+        "ts-mocha": "^10.0.0",
+        "ts-node": "^10.7.0",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.6.3",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "keywords": [
+        "ducksclan",
+        "express",
+        "fingerprint",
+        "fingerprinting"
+    ],
+    "author": "ducksclan <ducks.clan.app@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ducksclan/fingerprint.git"
+    },
+    "license": "MIT"
+}

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es5", "es6"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**/*", "src/**/*.test.ts"]
+}

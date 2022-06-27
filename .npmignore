@@ -1,0 +1,7 @@
+/node_modules
+/src
+/tests
+.prettierrc
+tsconfig.json
+webpack.config.js
+yarn.lock
